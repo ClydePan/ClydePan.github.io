@@ -79,19 +79,19 @@
 
 
 
-<meta name="description" content="由于项目中需要使用U-Net模型处理数据，遂在网络上查找了相关资料，并进行总结，以便之后的查阅复习。">
+<meta name="description" content="&amp;emsp;&amp;emsp;由于项目中需要使用U-Net模型处理数据，遂在网络上查找了相关资料，并进行总结，以便之后的查阅复习。">
 <meta name="keywords" content="U-Net">
 <meta property="og:type" content="article">
 <meta property="og:title" content="详解U-Net网络">
 <meta property="og:url" content="http://yoursite.com/2019/03/08/详解U-Net模型/index.html">
 <meta property="og:site_name" content="茶园小筑">
-<meta property="og:description" content="由于项目中需要使用U-Net模型处理数据，遂在网络上查找了相关资料，并进行总结，以便之后的查阅复习。">
+<meta property="og:description" content="&amp;emsp;&amp;emsp;由于项目中需要使用U-Net模型处理数据，遂在网络上查找了相关资料，并进行总结，以便之后的查阅复习。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2019/03/08/详解U-Net模型/语义分割效果图.png">
-<meta property="og:updated_time" content="2019-03-09T09:43:09.309Z">
+<meta property="og:updated_time" content="2019-03-09T09:45:37.338Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="详解U-Net网络">
-<meta name="twitter:description" content="由于项目中需要使用U-Net模型处理数据，遂在网络上查找了相关资料，并进行总结，以便之后的查阅复习。">
+<meta name="twitter:description" content="&amp;emsp;&amp;emsp;由于项目中需要使用U-Net模型处理数据，遂在网络上查找了相关资料，并进行总结，以便之后的查阅复习。">
 <meta name="twitter:image" content="http://yoursite.com/2019/03/08/详解U-Net模型/语义分割效果图.png">
 
 
@@ -354,7 +354,7 @@
       
 
       
-        <p>由于项目中需要使用U-Net模型处理数据，遂在网络上查找了相关资料，并进行总结，以便之后的查阅复习。<br><a id="more"></a><br>U-Net是基于FCN(Fully Convolutional Networks)的一个图像语义分割网络，主要用于医学图像的分割，下面将简单介绍语义分割和FCN网络。</p>
+        <p>&emsp;&emsp;由于项目中需要使用U-Net模型处理数据，遂在网络上查找了相关资料，并进行总结，以便之后的查阅复习。<br><a id="more"></a><br>&emsp;&emsp;U-Net是基于FCN(Fully Convolutional Networks)的一个图像语义分割网络，主要用于医学图像的分割，下面将简单介绍语义分割和FCN网络。</p>
 <h3 id="图像语义分割"><a href="#图像语义分割" class="headerlink" title="图像语义分割"></a>图像语义分割</h3><p>&emsp;&emsp;语义分割是对图像每个像素点的分类，属于同一类的像素都会被归为同一类。就像下面的这副图，图像被分割成特定种类的区域，属于猫的像素分为一类，属于天空的像素分为一类，其他类似。但语义分割无法在同一类型中再细分，比如下图中的两只牛就属于同一类，无法将不同的牛分为不同类。</p>
 <p><div align="center"><img src="/2019/03/08/详解U-Net模型/语义分割效果图.png" width="60%" height="60%"></div><br>&emsp;&emsp;在深度学习未大规模应用之前，一般使用TextonForest或是随机森林(Random Forest)方法来构建用于语义分割的分类器。在深度学习方向，则有更为优秀的分割模型。</p>
 <h3 id="FCN模型"><a href="#FCN模型" class="headerlink" title="FCN模型"></a>FCN模型</h3><p>&emsp;&emsp;对于一般的CNN网络，如LeNet和VGG16，网络的最后会加入全连接层，最终通过softmax层输出值为0~1的概率，用与分类多类别的图片。但这种分类是对整副图片做类别划分，并不能分类一张图片中的像素点的类别。<br>&emsp;&emsp;而FCN网络通过舍弃全连接层，实现了像素点类别的划分。</p>
