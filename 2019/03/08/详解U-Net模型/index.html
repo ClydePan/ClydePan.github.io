@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="U-Net,">
 
 
 
@@ -79,13 +79,20 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="茶园小筑">
-<meta property="og:url" content="http://yoursite.com/archives/2019/index.html">
+<meta name="description" content="由于项目中需要使用U-Net模型处理数据，遂在网络上查找了相关资料，并进行总结，以便之后的查阅复习。">
+<meta name="keywords" content="U-Net">
+<meta property="og:type" content="article">
+<meta property="og:title" content="详解U-Net网络">
+<meta property="og:url" content="http://yoursite.com/2019/03/08/详解U-Net模型/index.html">
 <meta property="og:site_name" content="茶园小筑">
+<meta property="og:description" content="由于项目中需要使用U-Net模型处理数据，遂在网络上查找了相关资料，并进行总结，以便之后的查阅复习。">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/2019/03/08/详解U-Net模型/语义分割效果图.png">
+<meta property="og:updated_time" content="2019-03-09T09:43:09.309Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="茶园小筑">
+<meta name="twitter:title" content="详解U-Net网络">
+<meta name="twitter:description" content="由于项目中需要使用U-Net模型处理数据，遂在网络上查找了相关资料，并进行总结，以便之后的查阅复习。">
+<meta name="twitter:image" content="http://yoursite.com/2019/03/08/详解U-Net模型/语义分割效果图.png">
 
 
 
@@ -115,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2019/">
+  <link rel="canonical" href="http://yoursite.com/2019/03/08/详解U-Net模型/">
 
 
 
 
 
-  <title>归档 | 茶园小筑</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title>详解U-Net网络 | 茶园小筑</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
@@ -140,7 +147,7 @@
     
   
 
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-archive">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -244,142 +251,176 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/08/详解U-Net模型/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="采茶人">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="茶园小筑">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">详解U-Net网络</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-08T15:20:26+08:00">
+                2019-03-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 3 篇日志。 继续努力。
-      </span>
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/深度学习/" itemprop="url" rel="index">
+                    <span itemprop="name">深度学习</span>
+                  </a>
+                </span>
 
-      
-
-        
-        
-        
-
-        
+                
+                
+              
+            </span>
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2019">2019</h1>
-          </div>
-        
-        
 
-        
+          
+            
+          
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/03/08/详解U-Net模型/" itemprop="url">
-              
-                <span itemprop="name">详解U-Net网络</span>
-              
-            </a>
-        
-      </h2>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-03-08T15:20:26+08:00" content="2019-03-08">
-          03-08
-        </time>
-      </div>
+          
 
-    </header>
-  </article>
+          
 
+        </div>
+      </header>
+    
 
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/03/08/卷积神经网络模型简述/" itemprop="url">
-              
-                <span itemprop="name">卷积神经网络模型简述</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-03-08T14:20:26+08:00" content="2019-03-08">
-          03-08
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/03/06/test/" itemprop="url">
-              
-                <span itemprop="name">test</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-03-06T16:53:00+08:00" content="2019-03-06">
-          03-06
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <p>由于项目中需要使用U-Net模型处理数据，遂在网络上查找了相关资料，并进行总结，以便之后的查阅复习。<br><a id="more"></a><br>U-Net是基于FCN(Fully Convolutional Networks)的一个图像语义分割网络，主要用于医学图像的分割，下面将简单介绍语义分割和FCN网络。</p>
+<h3 id="图像语义分割"><a href="#图像语义分割" class="headerlink" title="图像语义分割"></a>图像语义分割</h3><p>&emsp;&emsp;语义分割是对图像每个像素点的分类，属于同一类的像素都会被归为同一类。就像下面的这副图，图像被分割成特定种类的区域，属于猫的像素分为一类，属于天空的像素分为一类，其他类似。但语义分割无法在同一类型中再细分，比如下图中的两只牛就属于同一类，无法将不同的牛分为不同类。</p>
+<p><div align="center"><img src="/2019/03/08/详解U-Net模型/语义分割效果图.png" width="60%" height="60%"></div><br>&emsp;&emsp;在深度学习未大规模应用之前，一般使用TextonForest或是随机森林(Random Forest)方法来构建用于语义分割的分类器。在深度学习方向，则有更为优秀的分割模型。</p>
+<h3 id="FCN模型"><a href="#FCN模型" class="headerlink" title="FCN模型"></a>FCN模型</h3><p>&emsp;&emsp;对于一般的CNN网络，如LeNet和VGG16，网络的最后会加入全连接层，最终通过softmax层输出值为0~1的概率，用与分类多类别的图片。但这种分类是对整副图片做类别划分，并不能分类一张图片中的像素点的类别。<br>&emsp;&emsp;而FCN网络通过舍弃全连接层，实现了像素点类别的划分。</p>
+<h3 id="U-Net模型"><a href="#U-Net模型" class="headerlink" title="U-Net模型"></a>U-Net模型</h3><h3 id="论文链接"><a href="#论文链接" class="headerlink" title="论文链接"></a>论文链接</h3><ul>
+<li>FCN：<a href="https://arxiv.org/pdf/1411.4038.pdf" target="_blank" rel="noopener">Fully Convolutional Networks for Semantic Segmentation</a></li>
+<li>U-Net：<a href="https://arxiv.org/pdf/1505.04597.pdf" target="_blank" rel="noopener">U-Net: Convolutional Networks for Biomedical Image Segmentation</a></li>
+</ul>
 
       
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/U-Net/" rel="tag"># U-Net</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/03/08/卷积神经网络模型简述/" rel="next" title="卷积神经网络模型简述">
+                <i class="fa fa-chevron-left"></i> 卷积神经网络模型简述
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -387,6 +428,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -407,8 +452,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -468,6 +522,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#图像语义分割"><span class="nav-number">1.</span> <span class="nav-text">图像语义分割</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#FCN模型"><span class="nav-number">2.</span> <span class="nav-text">FCN模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#U-Net模型"><span class="nav-number">3.</span> <span class="nav-text">U-Net模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#论文链接"><span class="nav-number">4.</span> <span class="nav-text">论文链接</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -608,6 +678,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
